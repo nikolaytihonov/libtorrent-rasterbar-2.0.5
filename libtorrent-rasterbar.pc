@@ -1,0 +1,7 @@
+Name: libtorrent-rasterbar 
+Description: libtorrent is an open source C++ library implementing the BitTorrent protocol 
+URL: https://libtorrent.org 
+Version: 2.0.5 
+Libs:  -L"/usr/local/lib"  -L"/opt/homebrew/lib"  -L"/usr/local/opt/boost/lib"  -ltorrent-rasterbar  -lboost_system  -lcrypto  -ldl  -lssl 
+Libs.private:  -L"/usr/local/lib"  -L"/opt/homebrew/lib"  -L"/usr/local/opt/boost/lib"  -llibtry_signal.a 
+Cflags:  -DTORRENT_USE_LIBCRYPTO  -DTORRENT_USE_OPENSSL  -DTORRENT_SSL_PEERS  -DTORRENT_USE_I2P=1  -DBOOST_ALL_NO_LIB  -DBOOST_ASIO_ENABLE_CANCELIO  -DBOOST_ASIO_HAS_STD_CHRONO  -DBOOST_ASIO_NO_DEPRECATED  -DBOOST_MULTI_INDEX_DISABLE_SERIALIZATION  -DBOOST_SYSTEM_NO_DEPRECATED  -DTORRENT_LINKING_SHARED  -I"/usr/local/lib"  -I"/opt/homebrew/include"  -I"/usr/local/opt/boost/include" 
